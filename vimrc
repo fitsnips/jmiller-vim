@@ -12,6 +12,7 @@
  "
  " original repos on github
  Bundle 'tpope/vim-fugitive'
+ Bundle 'scrooloose/nerdtree'
 
  " Bundle 'git://git.wincent.com/command-t.git'
  " ...
