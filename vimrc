@@ -1,20 +1,23 @@
- set nocompatible               " be iMproved
- filetype off                   " required!
+set nocompatible               " be iMproved
+filetype off                   " required!
 
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
- " let Vundle manage Vundle
- " required! 
- Bundle 'gmarik/vundle'
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
 
- " My Bundles here:
- "
- " original repos on github
- Bundle 'tpope/vim-fugitive'
- Bundle 'scrooloose/nerdtree'
+" My Bundles here:
+"
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdtree'
+Bundle 'taglist.vim'
+Bundle 'vim-ruby/vim-ruby'
 
  " Bundle 'git://git.wincent.com/command-t.git'
+ "
  " ...
 
  filetype plugin indent on     " required!
@@ -31,6 +34,18 @@
 
 set hidden
 set number
+
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
+set autoindent
+" Use spaces instead of tabs
+set expandtab
+
+syntax on             " Enable syntax highlighting
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
 
 set wildmenu
 set wildmode=list:longest,full
@@ -53,3 +68,5 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
+
+
