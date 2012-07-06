@@ -16,12 +16,26 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'taglist.vim'
 Bundle 'vim-ruby/vim-ruby'
 
+" Maybe useful later?
+" Bundle 'scrooloose/nerdcommenter'
+" Bundle 'tpope/vim-surround'
+" Bundle 'CSApprox'
+" Bundle 'jimenezrick/vimerl'
+"
+" numbers.vim plugin will alternate between relative numbering (normal mode) and
+" absolute numbering (insert mode) 
+" Bundle 'myusuf3 / numbers.vim'  
+
  " Bundle 'git://git.wincent.com/command-t.git'
  "
  " ...
 
- filetype plugin indent on     " required!
- "
+" required! next two lines, yea I know it could be one but like it better with
+" descriptions
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+
+
  " Brief help
  " :BundleList          - list configured bundles
  " :BundleInstall(!)    - install(update) bundles
@@ -44,8 +58,6 @@ set expandtab
 
 syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
-filetype indent on    " Enable filetype-specific indenting
-filetype plugin on    " Enable filetype-specific plugins
 
 set wildmenu
 set wildmode=list:longest,full
