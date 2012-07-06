@@ -45,3 +45,10 @@ set statusline+=%= " right align remainder
 set statusline+=0x%-8B " character value
 set statusline+=%-14(%l,%c%V%) " line, character
 set statusline+=%<%P " file position
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+endif
