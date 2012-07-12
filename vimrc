@@ -81,4 +81,7 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
 
